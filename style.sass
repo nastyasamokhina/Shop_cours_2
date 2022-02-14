@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap')
 *
   margin: 0
   font-family: "Lato", sans-serif
@@ -90,6 +91,73 @@
     color: #F16D7F
   & > a
     text-decoration: none
+
+//блок с товарами
+.featured
+  text-align: center
+  &__heading
+    font-size: 30px
+    line-height: 36px
+    color: #222222
+    text-align: center
+  &__p
+    font-size: 14px
+    line-height: 17px
+    color: #9F9F9F
+    margin-top: 6px
+    margin-bottom: 48px
+
+.product
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  &__box
+    margin-bottom: 30px
+    background: #F8F8F8
+    width: 359px
+    position: relative
+  &__text
+    text-align: left
+    text-decoration: none
+    padding: 17px 25px
+  &__name
+    font-size: 13px
+    line-height: 16px
+    color: #000000
+    text-decoration: none
+  &__name h4
+    margin-bottom: 12px
+  &__description
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #5D5D5D
+    margin-bottom: 18px
+  &__price
+    font-size: 16px
+    line-height: 19px
+    color: #F16D7F
+  &__add
+    display: flex
+    justify-content: space-between
+    position: absolute
+    top: 187px
+    left: 110px
+    width: 138px
+    height: 44px
+    border: 1px solid #ffffff
+  &__add p
+    color: #ffffff
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    text-transform: uppercase
+  &__add a
+    text-decoration: none
+  &_add img
+    position: relative
+    width: 14px
+    height: auto
 
 @media (min-width: 768px)
   .header__content
