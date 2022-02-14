@@ -116,6 +116,10 @@
     background: #F8F8F8
     width: 359px
     position: relative
+  &__box:hover .product__img
+    filter: brightness(50%)
+  &__box:hover .product__add
+    display: block
   &__text
     text-align: left
     text-decoration: none
@@ -138,26 +142,25 @@
     line-height: 19px
     color: #F16D7F
   &__add
-    display: flex
-    justify-content: space-between
+    display: none
     position: absolute
-    top: 187px
     left: 110px
-    width: 138px
-    height: 44px
-    border: 1px solid #ffffff
-  &__add p
-    color: #ffffff
+    top: 187px
+    justify-content: center
+    align-items: center
+  &__add button
+    background: none
+    border: 1px solid white
+    color: white
+    display: flex
+    align-items: center
+    padding: 10px 14px
     font-size: 14px
-    line-height: 17px
-    text-align: center
-    text-transform: uppercase
-  &__add a
-    text-decoration: none
-  &_add img
-    position: relative
-    width: 14px
-    height: auto
+  &__add button img
+    width: 26px
+    height: 24px
+    margin-right: 11px
+
 
 @media (min-width: 768px)
   .header__content
