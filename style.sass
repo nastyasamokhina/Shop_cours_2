@@ -95,6 +95,7 @@
 //блок с товарами
 .featured
   text-align: center
+  height: 100%
   &__heading
     font-size: 30px
     line-height: 36px
@@ -210,6 +211,81 @@
     height: 40px
     width: auto
 
+.subscribe
+  background-image: url("img/back.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 64px
+  padding-bottom: 110px
+  padding-left: 20px
+  padding-right: 20px
+  &__review
+    display: block
+    text-align: center
+  &__photo
+    padding-bottom: 30px
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__form h3
+    font-weight: bold
+    font-size: 24px
+    text-align: center
+    margin-top: 59px
+    color: #222224
+  &__form h4
+    font-size: 14px
+    text-align: center
+    color: #222224
+    font-weight: normal
+  .form
+    height: 47px
+    margin-top: 27px
+    & input
+      background: #e1e1e1
+      border: none
+      padding: 6px 21px
+      box-sizing: border-box
+      border-top-left-radius: 28px
+      border-bottom-left-radius: 28px
+      float: left
+      width: 185px
+      height: inherit
+      font-size: 14px
+      line-height: 17px
+      align-items: center
+      color: #222224
+      opacity: 0.67
+    & button
+      height: inherit
+      background-color: #f16d7f
+      border-top-right-radius: 28px
+      border-bottom-right-radius: 28px
+      border: none
+      padding: 0 17px
+      font-size: 14px
+      line-height: 17px
+      color: #FFFFFF
+
+.address
+  margin: 0
+  background: #222224
+  display: grid
+  grid-template-columns: auto
+  grid-template-rows: 71px 71px
+  justify-items: center
+  align-items: end
+  font-size: 16px
+  line-height: 19px
+  color: #FBFBFB
+  font-style: normal
+  & p
+    padding-bottom: 9px
+  &__web img
+    padding-left: 4px
+    padding-right: 4px
+
 
 @media (min-width: 768px)
   .header__content
@@ -253,14 +329,36 @@
     padding-left: 204px
     padding-right: 204px
 
+  .address
+    grid-template-columns: 50% 50%
+    grid-template-rows: 79px
+    align-items: center
+    &:last-child
+      grid-column-start: 1
+      grid-column-end: 2
+    & p
+      padding-bottom: 0
+
 @media (min-width: 1440px)
+  .container
+    max-width: 1140px
+    margin: 0 auto
+
   .benefits__forma
     padding-left: 0
     padding-right: 0
     flex-wrap: nowrap
 
+  .subscribe
+    padding-top: 97px
+    padding-bottom: 126px
+    &__block
+      display: flex
+      justify-content: space-between
+
+
 @media (min-width: 1600px)
-  .container
+  //.container
     max-width: 1140px
     margin: 0 auto
 
@@ -316,6 +414,7 @@
       text-decoration: none
     &__link:hover
       color: #F16D7F
+
   .menu
     grid-template-rows: 260px 180px
     gap: 30px
@@ -325,3 +424,12 @@
 
   .benefits
     flex-wrap: nowrap
+
+  //.subscribe
+    padding-top: 97px
+    padding-bottom: 126px
+    &__block
+      display: flex
+      justify-content: space-between
+    &__form
+      margin-top: 50px
