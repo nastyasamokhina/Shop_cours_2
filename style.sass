@@ -269,22 +269,21 @@
       color: #FFFFFF
 
 .address
-  margin: 0
   background: #222224
-  display: grid
-  grid-template-columns: auto
-  grid-template-rows: 71px 71px
-  justify-items: center
-  align-items: end
-  font-size: 16px
-  line-height: 19px
-  color: #FBFBFB
-  font-style: normal
-  & p
-    padding-bottom: 9px
-  &__web img
-    padding-left: 4px
-    padding-right: 4px
+  padding: 43px 20px 10px
+  display: flex
+  flex-direction: column
+  &__web
+    margin: 0 auto
+    width: 148px
+    display: flex
+    justify-content: space-around
+  &__text
+    color: #fffffF
+    font-style: normal
+    margin-top: 40px
+    text-align: center
+
 
 
 @media (min-width: 768px)
@@ -330,14 +329,14 @@
     padding-right: 204px
 
   .address
-    grid-template-columns: 50% 50%
-    grid-template-rows: 79px
-    align-items: center
-    &:last-child
-      grid-column-start: 1
-      grid-column-end: 2
-    & p
-      padding-bottom: 0
+    flex-direction: row-reverse
+    justify-content: space-between
+    padding: 24px 32px
+    &__text
+      margin-top: 0
+      line-height: 35px
+    &__web
+      margin-right: 0
 
 @media (min-width: 1440px)
   .container
