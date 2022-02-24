@@ -104,6 +104,7 @@ body
 .featured
   text-align: center
   height: 100%
+  margin-bottom: 64px
   &__heading
     font-size: 30px
     line-height: 36px
@@ -549,12 +550,14 @@ body
     margin: 0 auto
     &_list
       padding: 0
-    &_list li
-      display: inline
-      list-style-type: none
-      font-size: 10px
-      line-height: 12px
-      color: #6F6E6E
+      & li
+        display: inline
+        list-style-type: none
+        & a
+          text-decoration: none
+          font-size: 10px
+          line-height: 12px
+          color: #6F6E6E
     &_list li:nth-child(2)
       margin-left: 25px
       margin-right: 25px
@@ -604,6 +607,13 @@ body
     padding-bottom: 29px
     width: 466px
 
+  .specification
+    &__trait_2
+      width: 642px
+    &__text
+      padding-left: 106px
+      padding-right: 106px
+
 @media (min-width: 1440px)
   .filter
     padding-left: 16px
@@ -618,7 +628,20 @@ body
     padding-top: 11px
     padding-bottom: 42px
     width: 597px
+
   .product__cart_arrow_left
     top: 365px
+
   .product__cart_arrow_right
     top: 365px
+
+  .specification
+    position: relative
+    background-color: #FFFFFF
+    top: -50px
+    &__text
+      padding-left: 292px
+      padding-right: 292px
+
+  .featured
+    margin-bottom: 128px
