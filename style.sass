@@ -663,8 +663,12 @@ body
     text-align: center
 
 .cart
+  display: flex
+  flex-direction: column
+  margin: 40px 8px
   &__product
-    margin: 40px 8px
+    display: flex
+    flex-direction: column
     &_list
       display: flex
       filter: drop-shadow(8px 8px 21px rgba(0, 0, 0, 0.13))
@@ -699,6 +703,8 @@ body
     &_button
       display: flex
       justify-content: space-between
+      width: 359px
+      margin: 0 auto
       & button
         width: 175px
         border: 1px solid #A4A4A4
@@ -712,14 +718,17 @@ body
           background-color: #EF5B70
           color: #FFFFFF
   &__adress
-    margin: 8px
+    margin: 64px auto
+    display: flex
+    flex-direction: column
     &_form
       width: 360px
+      margin: 0 auto
       & input
         margin-top: 20px
-        width: inherit
         box-sizing: border-box
         padding: 14px 17px
+        width: inherit
         font-weight: 300
         font-size: 13px
         line-height: 16px
@@ -746,8 +755,10 @@ body
           color: #FFFFFF
     &_price
       width: 360px
+      height: 214px
       background-color: #F5F3F3
       padding: 40px 43px
+      margin: 0 auto
       box-sizing: border-box
       text-align: right
       & p:first-of-type
@@ -777,6 +788,9 @@ body
         font-size: 16px
         line-height: 19px
         color: #FFFFFF
+        &:hover
+          background: #FFFFFF
+          color: #F16D7F
 
 
 
@@ -787,6 +801,63 @@ body
   .new__h3_cart h3
     text-align: left
 
-  .cart__adress
-    display: flex
+  .cart
+    margin: 60px 18px
+    &__product
+      &_text
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+        padding: 22px 31px
+        & h5
+          font-size: 24px
+          line-height: 29px
+          margin-bottom: 42px
+        & span
+          font-size: 22px
+          line-height: 30px
+        & input
+          font-size: 18px
+          line-height: 22px
+          width: 44px
+      &_img
+        width: 262px
+      &_button
+        width: 508px
+        & button
+          padding: 17px 35px
+          width: 235px
+          font-weight: 300
+          font-size: 14px
+          line-height: 17px
+          color: #000000
+    &__adress
+      flex-direction: row
+      justify-content: space-between
+      margin: 64px 0
+      &_form
+        margin: 0 auto
+      &_price
+        margin: 38px auto
+
+
+
+
+
+@media (min-width: 1440px)
+  .cart
+    flex-direction: row
     justify-content: space-between
+    margin: 96px auto
+    &__adress
+      flex-direction: column
+      margin-top: 0
+      margin-bottom: 180px
+      &_form button
+        margin-bottom: 0
+    &__adress_price
+      margin-top: 0
+    &__product_text
+      width: 390px
+    &__product_list:nth-child(2)
+      margin-bottom: 72px
