@@ -841,9 +841,6 @@ body
         margin: 38px auto
 
 
-
-
-
 @media (min-width: 1440px)
   .cart
     flex-direction: row
@@ -861,3 +858,118 @@ body
       width: 390px
     &__product_list:nth-child(2)
       margin-bottom: 72px
+
+
+
+//REGISTRATION
+
+.cart
+  display: flex
+  flex-direction: column
+  margin: 40px 8px
+
+.registration
+  display: flex
+  flex-direction: column
+  margin: 40px 8px
+
+.registration
+  &__form
+    margin: 0 auto
+    width: 359px
+    & p
+      margin-top: 15px
+      font-weight: 300
+      font-size: 13px
+      line-height: 16px
+      color: #B1B1B1
+    & button
+      padding: 16px 29px
+      background-color: #F16D7F
+      border: none
+      color: white
+      margin-top: 40px
+      margin-bottom: 40px
+      font-size: 14px
+      line-height: 17px
+      &:hover
+        color: #F16D7F
+        background-color: white
+        border: 1px solid #F16D7F
+  &__radio
+    margin-top: 31px
+    margin-bottom: 34px
+  &__inputtext
+    width: inherit
+    box-sizing: border-box
+    margin-top: 20px
+    padding: 13px 17px
+    font-weight: 300
+    font-size: 13px
+    line-height: 16px
+    color: #B1B1B1
+  &__inputradio
+    margin-right: 5px
+  &__labeltext
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #222222
+  &__labelradio
+    margin-right: 15px
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #222222
+  &__info
+    margin: 0 auto
+    width: 359px
+    & h5
+      margin-bottom: 15px
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      color: #000000
+    & p
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      color: #000000
+    & ul
+      list-style-image: url('img/registration/V.png')
+      padding-left: 25px
+      & li
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #000000
+        margin-top: 16px
+        padding-left: 23px
+        padding-bottom: 4px
+
+
+@media (min-width: 768px)
+  .registration
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin: 40px 16px
+    &__form
+      margin: 0
+    &__info
+      margin: 0
+
+@media (min-width: 1140px)
+  .registration
+    margin: 40px auto
+    &__info
+      width: 652px
+      & h5
+        font-size: 24px
+        line-height: 29px
+      & p
+        font-size: 24px
+        line-height: 29px
+      & ul li
+        font-size: 24px
+        line-height: 29px
